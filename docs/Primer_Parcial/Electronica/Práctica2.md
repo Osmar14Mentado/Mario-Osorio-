@@ -9,9 +9,10 @@ estado: borrador   # borrador | completa
 # Sesión 3 — ESP32: control de LEDs
 ## Qué debía lograr hoy
 - [✅] Encender un LED con el ESP32
+- [✅] Encender dos LEDs al mismo tiempo con el ESP32
 - [✅] Hacer que dos LEDs parpadeen a destiempo con el ESP32
 - [✅] Hacer que un LED parpadee al presionar un botón con el ESP32
-- [✅] Presionar el boton para con ayuda del ESP32 reciba una señal la computadora 
+- [✅] Presionar el botón para que, con ayuda del ESP32, la computadora reciba una señal
 - [✅] Conectar el ESP32 al teléfono para enviar una señal al presionar el botón
 - [✅] Conectar el teléfono al ESP32 para encender o apagar el LED
 ## Qué usé

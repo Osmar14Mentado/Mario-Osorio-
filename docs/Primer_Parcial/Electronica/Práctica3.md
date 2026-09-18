@@ -38,7 +38,9 @@ estado: borrador   # borrador | completa
 *Código en Arduino que controla dos motores DC mediante el puente H (adelante, atrás, derecha, izquierda) junto con el movimiento de un servomotor.*
 
 ## Qué falló y cómo lo resolví
-En esta práctica no falló nada, pero lo que sí sorprendió fue lo sencillo que resulta controlar la dirección de un motor DC combinando señales HIGH/LOW en el puente H. También sorprendió lo versátiles que son este tipo de motores, ya que con muy pocas líneas de código se logran distintos movimientos (adelante, atrás, giros) sin necesidad de un control complejo.
+- **Síntoma:** En esta práctica no falló nada, pero sorprendió lo sencillo que resulta controlar la dirección de un motor DC combinando señales HIGH/LOW en el puente H.
+- **Cómo lo encontré:** También sorprendió lo versátiles que son este tipo de motores, ya que con muy pocas líneas de código se logran distintos movimientos (adelante, atrás, giros) sin necesidad de un control complejo.
+- **Solución:** No fue necesaria una solución, porque en esta práctica no falló nada.
 
 ## Qué aprendí
 Antes no sabía qué era un motor DC ni cómo funcionaba. Aprendí que su sentido de giro depende de la polaridad con la que se alimenta, y que por eso el puente H invierte las terminales para hacerlo girar hacia adelante o hacia atrás. También entendí que la velocidad del motor está relacionada con el voltaje aplicado: a mayor voltaje, mayor velocidad de giro. En general, comprendí que son motores simples de controlar pero muy versátiles para distintos tipos de movimiento.
