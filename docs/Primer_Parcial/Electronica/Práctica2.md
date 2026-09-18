@@ -24,22 +24,28 @@ estado: borrador   # borrador | completa
 - Cable USB
 
 ## Qué hice y qué pasó (evidencia)
-![Primer LED encendido con ESP32](1789708868420_image.png)
+![Primer LED encendido con ESP32](../../recursos/imgs/led2.png)
+
 *LED encendido mediante el ESP32, conectado a través de una resistencia en la protoboard.*
 
-![Dos LEDs parpadeando a destiempo](1789709116034_image.png)
+![Dos LEDs parpadeando a destiempo](../../recursos/imgs/8.png)
+
 *Dos LEDs (rojo y azul) parpadeando a destiempo, cada uno controlado de forma independiente con el ESP32.*
 
-![LEDs controlados con botón](1789709284003_image.png)
+![LEDs controlados con botón](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20014829.png)
+
 *Al presionar el botón se enciende un LED y, al soltarlo, se enciende el otro, usando el ESP32 para leer el estado del botón.*
 
-![Señal recibida en el monitor serial](1789709577318_image.png)
+![Señal recibida en el monitor serial](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20014939.png)
+
 *Al presionar el botón, el ESP32 detecta el estado del pin y envía la señal "PRECIONADO" a la computadora mediante el monitor serial.*
 
-![Código de conexión Bluetooth con el ESP32](1789709680572_image.png)
+![Código de conexión Bluetooth con el ESP32](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20015053.png)
+
 *Código en Arduino IDE que configura el ESP32 como dispositivo Bluetooth, permitiendo recibir comandos "ON"/"OFF" desde el celular para controlar un pin digital.* 
 
-![Código de control de LED vía botón/entrada digital](1789709857469_image.png)
+![Código de control de LED vía botón/entrada digital](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20015359.png)
+
 *Código en Arduino IDE donde el ESP32 lee el estado de un pin de entrada y enciende o apaga los LEDs correspondientes según la señal recibida.*
 
 ## Qué falló y cómo lo resolví

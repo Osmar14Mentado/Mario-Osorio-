@@ -27,12 +27,15 @@ estado: borrador   # borrador | completa
 
 ## Qué hice y qué pasó (evidencia)
 ![Mi segundo circuito](../../recursos/imgs/Mi_primer_circuito}.jpeg)
+
 *Prueba de encendido de un LED conectado en serie con una resistencia sobre protoboard.*
 
 ![Mi segundo circuito](../../recursos/imgs/led1.png)
+
 *Circuito con LED parpadeante, monitoreado con osciloscopio para observar la forma de la señal eléctrica.*
 
 ![Osciloscopio mostrando la señal](../../recursos/imgs/Osiloscopio.png)
+
 *Observación de la señal eléctrica del circuito mediante el osciloscopio, donde se registró su frecuencia y periodo.*
 
 | Magnitud | Capacitor electrolítico | Capacitor cerámico |
