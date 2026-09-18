@@ -21,16 +21,20 @@ estado: borrador   # borrador | completa
 
 ## Qué hice y qué pasó (evidencia)
 
-![Diagrama de puente H](1789711531413_image.png)
+![Diagrama de puente H](../../recursos/imgs/puente-h.jpg)
+
 *Diagrama de un puente H con cuatro transistores (Q1-Q4), usado para controlar el sentido de giro de un motor DC.*
 
-![Circuito base para puente H](1789711971137_image.png)
+![Circuito base para puente H](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20020047.png)
+
 *Montaje inicial con un transistor, resistencia y LED como punto de partida antes de armar el puente H completo.*
 
-![Simulación de control de dos motores con puente H](1789711724965_image.png)
+![Simulación de control de dos motores con puente H](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20000816.png)
+
 *Simulación en Tinkercad de un Arduino UNO controlando dos motores DC a través de un módulo puente H (L293D).*
 
-![Código de control de motores DC y servomotor](1789712348213_image.png)
+![Código de control de motores DC y servomotor](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20001857.png)
+
 *Código en Arduino que controla dos motores DC mediante el puente H (adelante, atrás, derecha, izquierda) junto con el movimiento de un servomotor.*
 
 ## Qué falló y cómo lo resolví
