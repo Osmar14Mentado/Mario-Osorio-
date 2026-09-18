@@ -6,7 +6,7 @@ equipo: "Mario Osorio y Maria Fernanda"
 estado: borrador   # borrador | completa
 ---
 
-# Sesión 2 — conceptos básicos de electrónica
+# Sesión 3 — ESP32: control de LEDs
 - [✅] Encender un LED con el ESP32
 - [✅] Hacer que dos LEDs parpadeen a destiempo con el ESP32
 - [✅] Hacer que un LED parpadee al presionar un botón con el ESP32
