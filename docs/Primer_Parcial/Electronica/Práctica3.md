@@ -7,12 +7,10 @@ estado: borrador   # borrador | completa
 ---
 
 # Sesión 4 — Puente H: control de motores DC y servomotor
-- [✅] Encender un LED con el ESP32
-- [✅] Hacer que dos LEDs parpadeen a destiempo con el ESP32
-- [✅] Hacer que un LED parpadee al presionar un botón con el ESP32
-- [✅] Presionar el boton para con ayuda del ESP32 reciba una señal la computadora 
-- [✅] Conectar el ESP32 al teléfono para enviar una señal al presionar el botón
-- [✅] Conectar el teléfono al ESP32 para encender o apagar el LED
+## Qué debía lograr hoy
+- [✅] Simular el control de dos motores DC con un puente H (L293D)
+- [✅] Controlar el sentido de giro de un motor DC (adelante, atrás, izquierda, derecha)
+- [✅] Encender y controlar un servomotor con Arduino
 ## Qué usé
 - ESP32 
 - Protoboard

@@ -38,3 +38,15 @@ extra_css:
   - https://use.fontawesome.com/releases/v6.5.2/css/all.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
 
+nav:
+  - Inicio: index.md
+  - Comandos: comandos.md
+  - Ejemplo: ejemplo.md
+  - Git: gitcmds.md
+  - Primer Parcial:
+      - Sesión 1: Primer_Parcial/sesion1.md
+      - Electrónica:
+          - Práctica 1: Primer_Parcial/Electronica/Práctica1.md
+          - Práctica 2: Primer_Parcial/Electronica/Práctica2.md
+          - Sesión 4: Primer_Parcial/Electronica/Práctica3.md
+
