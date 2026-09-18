@@ -12,39 +12,31 @@ estado: borrador   # borrador | completa
 - [✅] Controlar el sentido de giro de un motor DC (adelante, atrás, izquierda, derecha)
 - [✅] Encender y controlar un servomotor con Arduino
 ## Qué usé
-- ESP32 
-- Protoboard
-- 2 LEDs azules
-- 2 resistencias de 220
-- Botón pulsador
-- Cables de puente
-- Cable USB
+- Arduino UNO (simulado en Tinkercad)
+- Módulo puente H L293D (simulado en Tinkercad)
+- 2 motores DC (simulados en Tinkercad)
+- 1 servomotor (simulado en Tinkercad)
+- Batería de 9V (simulada en Tinkercad)
+- Cables de conexión (simulados en Tinkercad)
 
 ## Qué hice y qué pasó (evidencia)
-![Primer LED encendido con ESP32](1789708868420_image.png)
-*LED encendido mediante el ESP32, conectado a través de una resistencia en la protoboard.*
 
-![Dos LEDs parpadeando a destiempo](1789709116034_image.png)
-*Dos LEDs (rojo y azul) parpadeando a destiempo, cada uno controlado de forma independiente con el ESP32.*
+![Diagrama de puente H](1789711531413_image.png)
+*Diagrama de un puente H con cuatro transistores (Q1-Q4), usado para controlar el sentido de giro de un motor DC.*
 
-![LEDs controlados con botón](1789709284003_image.png)
-*Al presionar el botón se enciende un LED y, al soltarlo, se enciende el otro, usando el ESP32 para leer el estado del botón.*
+![Circuito base para puente H](1789711971137_image.png)
+*Montaje inicial con un transistor, resistencia y LED como punto de partida antes de armar el puente H completo.*
 
-![Señal recibida en el monitor serial](1789709577318_image.png)
-*Al presionar el botón, el ESP32 detecta el estado del pin y envía la señal "PRECIONADO" a la computadora mediante el monitor serial.*
+![Simulación de control de dos motores con puente H](1789711724965_image.png)
+*Simulación en Tinkercad de un Arduino UNO controlando dos motores DC a través de un módulo puente H (L293D).*
 
-![Código de conexión Bluetooth con el ESP32](1789709680572_image.png)
-*Código en Arduino IDE que configura el ESP32 como dispositivo Bluetooth, permitiendo recibir comandos "ON"/"OFF" desde el celular para controlar un pin digital.* 
-
-![Código de control de LED vía botón/entrada digital](1789709857469_image.png)
-*Código en Arduino IDE donde el ESP32 lee el estado de un pin de entrada y enciende o apaga los LEDs correspondientes según la señal recibida.*
+![Código de control de motores DC y servomotor](1789712348213_image.png)
+*Código en Arduino que controla dos motores DC mediante el puente H (adelante, atrás, derecha, izquierda) junto con el movimiento de un servomotor.*
 
 ## Qué falló y cómo lo resolví
-- **Síntoma:** El circuito no funcionaba como se esperaba porque en el código se confundían los pines configurados como entrada (INPUT) con los de salida (OUTPUT) del ESP32.
-- **Cómo lo encontré:** Al revisar el comportamiento inesperado del LED y el botón, se verificó línea por línea el código, comparando cada `pinMode()` con la conexión física en la protoboard.
-- **Solución:** Se consultó la datasheet del ESP32 para confirmar la función correcta de cada pin, se corrigió la asignación en el código y se volvió a probar el circuito para confirmar el funcionamiento correcto.
+En esta práctica no falló nada, pero lo que sí sorprendió fue lo sencillo que resulta controlar la dirección de un motor DC combinando señales HIGH/LOW en el puente H. También sorprendió lo versátiles que son este tipo de motores, ya que con muy pocas líneas de código se logran distintos movimientos (adelante, atrás, giros) sin necesidad de un control complejo.
 
 ## Qué aprendí
-Antes no sabía qué era un ESP32 ni para qué servía más allá de ser "una placa con pines", pero aprendí a identificar sus entradas y salidas y a interpretar su datasheet para saber qué pin usar y por qué. También entendí cómo controlar el estado de un LED desde código, algo que antes hacía por prueba y error sin entender la lógica detrás. Descubrí que el ESP32 puede comunicarse por Bluetooth con un celular, lo que me hizo ver que un microcontrolador no solo enciende y apaga cosas, sino que puede recibir órdenes externas en tiempo real. En general, entendí que leer bien la documentación del componente ahorra mucho tiempo de prueba y error.
+Antes no sabía qué era un motor DC ni cómo funcionaba. Aprendí que su sentido de giro depende de la polaridad con la que se alimenta, y que por eso el puente H invierte las terminales para hacerlo girar hacia adelante o hacia atrás. También entendí que la velocidad del motor está relacionada con el voltaje aplicado: a mayor voltaje, mayor velocidad de giro. En general, comprendí que son motores simples de controlar pero muy versátiles para distintos tipos de movimiento.
 ## Siguiente paso
-Explorar cómo controlar más de un LED de forma independiente vía Bluetooth desde el celular.
+Combinar el control de los motores DC con el servomotor para lograr un movimiento coordinado.*
