@@ -46,7 +46,7 @@ nav:
   - Primer Parcial:
       - Sesión 1: Primer_Parcial/sesion1.md
       - Electrónica:
-          - Práctica 1: Primer_Parcial/Electronica/Práctica1.md
-          - Práctica 2: Primer_Parcial/Electronica/Práctica2.md
-          - Sesión 4: Primer_Parcial/Electronica/Práctica3.md
+          - Sesión 2 — conceptos básicos de electrónica: Primer_Parcial/Electronica/Práctica1.md
+          - Sesión 3 — ESP32: control de LEDs: Primer_Parcial/Electronica/Práctica2.md
+          - Sesión 4 — Puente H: control de motores DC y servomotor: Primer_Parcial/Electronica/Práctica3.md
 
