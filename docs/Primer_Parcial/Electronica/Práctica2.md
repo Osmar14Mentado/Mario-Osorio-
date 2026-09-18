@@ -1,12 +1,13 @@
 ---
 titulo: "Sesión 3 — conceptos básicos de electrónica"
 fecha: 2026-09-04
-autor: "Mario Osorio"
-equipo: "Mario Osorio y Maria Fernanda"
+autor: "Osorio Mario"
+equipo: "Osorio Mario y Muñoz Mario"
 estado: borrador   # borrador | completa
 ---
 
 # Sesión 3 — ESP32: control de LEDs
+## Qué debía lograr hoy
 - [✅] Encender un LED con el ESP32
 - [✅] Hacer que dos LEDs parpadeen a destiempo con el ESP32
 - [✅] Hacer que un LED parpadee al presionar un botón con el ESP32

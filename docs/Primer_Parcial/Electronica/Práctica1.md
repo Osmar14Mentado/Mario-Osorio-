@@ -1,12 +1,13 @@
 ---
 titulo: "Sesión 2 — conceptos básicos de electrónica"
 fecha: 2026-08-28
-autor: "Mario Osorio"
-equipo: "Mario Osorio y Maria Fernanda"
+autor: "Osorio Mario"
+equipo: "Osorio Mario y Muñoz Mario"
 estado: borrador   # borrador | completa
 ---
 
 # Sesión 2 — conceptos básicos de electrónica
+## Qué debía lograr hoy
 - [✅] Prender un led 
 - [✅] Hacer parpadear un led 
 
@@ -57,4 +58,4 @@ estado: borrador   # borrador | completa
 ## Qué aprendí
 Antes pensaba que un LED parpadeante necesitaba código o un microcontrolador, pero aprendí que con solo una resistencia y un capacitor bien combinados se puede lograr ese efecto de forma completamente analógica. También entendí que el valor del capacitor cambia directamente la velocidad del parpadeo, algo que no esperaba hasta verlo con mis propios ojos en el osciloscopio. Aprendí a usar la protoboard de forma más consciente, entendiendo por qué un cable mal puesto puede simular un botón y arruinar todo el circuito. Y por primera vez entendí para qué sirve realmente un osciloscopio: no solo para "ver electricidad", sino para medir con precisión frecuencia, periodo y voltaje, y así comprobar si el circuito hace lo que debería.
 ## Siguiente paso
-*Próximo paso: probar con otros valores de resistencia y capacitor para ver cómo cambia la velocidad del parpadeo.*
+Probar con otros valores de resistencia y capacitor para ver cómo cambia la velocidad del parpadeo.*
