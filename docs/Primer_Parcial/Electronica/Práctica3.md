@@ -39,4 +39,4 @@ En esta práctica no falló nada, pero lo que sí sorprendió fue lo sencillo qu
 ## Qué aprendí
 Antes no sabía qué era un motor DC ni cómo funcionaba. Aprendí que su sentido de giro depende de la polaridad con la que se alimenta, y que por eso el puente H invierte las terminales para hacerlo girar hacia adelante o hacia atrás. También entendí que la velocidad del motor está relacionada con el voltaje aplicado: a mayor voltaje, mayor velocidad de giro. En general, comprendí que son motores simples de controlar pero muy versátiles para distintos tipos de movimiento.
 ## Siguiente paso
-Combinar el control de los motores DC con el servomotor para lograr un movimiento coordinado.*
+Combinar el control de los motores DC con el servomotor para lograr un movimiento coordinado.

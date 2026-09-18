@@ -26,18 +26,14 @@ estado: borrador   # borrador | completa
 - sondas de osciloscopio
 
 ## Qué hice y qué pasó (evidencia)
-![Miprimercircuito](../)
+![Mi segundo circuito](../../recursos/imgs/Mi_primer_circuito}.jpeg)
 *Prueba de encendido de un LED conectado en serie con una resistencia sobre protoboard.*
 
-![Mi segundo circuito](Misegundocircuito.jpg)
+![Mi segundo circuito](../../recursos/imgs/led1.png)
 *Circuito con LED parpadeante, monitoreado con osciloscopio para observar la forma de la señal eléctrica.*
 
-![Osciloscopio mostrando la señal](1789705999028_image.png)
+![Osciloscopio mostrando la señal](../../recursos/imgs/Osiloscopio.png)
 *Observación de la señal eléctrica del circuito mediante el osciloscopio, donde se registró su frecuencia y periodo.*
-
-
-
-![Pie de foto: qué muestra esta imagen](img/sesionN_1.jpg)
 
 | Magnitud | Capacitor electrolítico | Capacitor cerámico |
 | --- | --- | --- |
