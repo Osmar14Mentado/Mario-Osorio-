@@ -37,9 +37,9 @@ estado: borrador   # completa | completa
 
 *Esquema de conexión entre el Arduino UNO y el servomotor en Tinkercad, mostrando las líneas de alimentación y señal PWM.*
 
+```CPP
 #include <Servo.h>
 Servo oliver_dame_de_baja;
-```CPP
 void adelante(){
   digitalWrite(6, HIGH);
   digitalWrite(7, LOW);
