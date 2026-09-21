@@ -37,11 +37,9 @@ estado: borrador   # completa | completa
 
 *Esquema de conexión entre el Arduino UNO y el servomotor en Tinkercad, mostrando las líneas de alimentación y señal PWM.*
 
-​```cpp
-
 #include <Servo.h>
 Servo oliver_dame_de_baja;
-
+```CPP
 void adelante(){
   digitalWrite(6, HIGH);
   digitalWrite(7, LOW);
@@ -97,9 +95,7 @@ void loop(){
   izq();
   delay(1000);
 }
-
-​```
-
+```
 *Código en Arduino que controla dos motores DC mediante el puente H (adelante, atrás, derecha, izquierda) junto con el movimiento de un servomotor.*
 
 ## Qué falló y cómo lo resolví

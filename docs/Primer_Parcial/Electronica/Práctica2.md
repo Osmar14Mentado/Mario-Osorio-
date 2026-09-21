@@ -37,16 +37,67 @@ estado: borrador   # completa | completa
 
 *Al presionar el botón se enciende un LED y, al soltarlo, se enciende el otro, usando el ESP32 para leer el estado del botón.*
 
-![Señal recibida en el monitor serial](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20014939.png)
+```CPP
+void setup() {
+  Serial.begin(9600);
+  pinMode(34, INPUT);
+}
 
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(digitalRead(34)==HIGH){
+    Serial.println("PRECIONADO");
+  }else{
+    Serial.println("NO");
+  }
+}
+```
 *Al presionar el botón, el ESP32 detecta el estado del pin y envía la señal "PRECIONADO" a la computadora mediante el monitor serial.*
+```CPP
+#include "BluetoothSerial.h"
+BluetoothSerial DameDeBaja;
+void setup() {
+  // put your setup code here, to run once:
+  DameDeBaja.begin("Oliver dame de baja");
+  DameDeBaja.setTimeout(20);
+  Serial.begin(9600);
+  pinMode(32,INPUT);
+}
 
-![Código de conexión Bluetooth con el ESP32](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20015053.png)
-
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(DameDeBaja.available()){
+    String mensaje = DameDeBaja.readStringUntil('\n');
+    mensaje.trim();
+    if(mensaje == "ON"){
+      digitalWrite(32,1);
+    }
+    if(mensaje == "OFF"){
+      digitalWrite(32,0);
+    }
+  }
+}
+```
 *Código en Arduino IDE que configura el ESP32 como dispositivo Bluetooth, permitiendo recibir comandos "ON"/"OFF" desde el celular para controlar un pin digital.* 
+```CPP
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(33,OUTPUT);
+  pinMode(32,OUTPUT);
+  pinMode(34,INPUT);
+}
 
-![Código de control de LED vía botón/entrada digital](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20015359.png)
-
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(digitalRead(34)==HIGH){
+    digitalWrite(32,1);
+    digitalWrite(33,0);
+  }else{
+    digitalWrite(33,1);
+    digitalWrite(32,0);
+  }
+}
+```
 *Código en Arduino IDE donde el ESP32 lee el estado de un pin de entrada y enciende o apaga los LEDs correspondientes según la señal recibida.*
 
 ## Qué falló y cómo lo resolví
