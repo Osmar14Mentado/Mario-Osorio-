@@ -2,7 +2,7 @@
 titulo: "Sesión 4 — conceptos básicos de electrónica"
 fecha: 2026-09-11
 autor: "Osorio Mario"
-equipo: "Osorio Mario y Muñoz Mario"
+equipo: "Osorio Mario y Muñoz Maria"
 estado: borrador   # completa | completa
 ---
 
