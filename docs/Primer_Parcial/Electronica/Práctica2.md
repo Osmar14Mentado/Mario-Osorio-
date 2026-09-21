@@ -3,7 +3,7 @@ titulo: "Sesión 3 — conceptos básicos de electrónica"
 fecha: 2026-09-04
 autor: "Osorio Mario"
 equipo: "Osorio Mario y Muñoz Mario"
-estado: borrador   # borrador | completa
+estado: borrador   # completa | completa
 ---
 
 # Sesión 3 — ESP32: control de LEDs

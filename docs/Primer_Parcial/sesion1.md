@@ -9,3 +9,8 @@ Estoy cursando mi licenciatura en la Iberoamericana Puebla
 Me gusta mucho pokemon, conocer nuevas personas, hacer galletas y jugar videojuegos.
 
 ![Pokemon](../recursos/imgs/Image%20(1).jpeg)
+
+```bash
+git add . 
+git commit -m "cambio_que_hiciste"
+git push 

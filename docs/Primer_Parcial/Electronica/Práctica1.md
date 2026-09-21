@@ -2,8 +2,8 @@
 titulo: "Sesión 2 — conceptos básicos de electrónica"
 fecha: 2026-08-28
 autor: "Osorio Mario"
-equipo: "Osorio Mario y Muñoz Mario"
-estado: borrador   # borrador | completa
+equipo: "Osorio Mario y Muñoz Maria"
+estado: borrador   # completa | completa
 ---
 
 # Sesión 2 — conceptos básicos de electrónica

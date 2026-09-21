@@ -3,7 +3,7 @@ titulo: "Sesión 4 — conceptos básicos de electrónica"
 fecha: 2026-09-11
 autor: "Osorio Mario"
 equipo: "Osorio Mario y Muñoz Mario"
-estado: borrador   # borrador | completa
+estado: borrador   # completa | completa
 ---
 
 # Sesión 4 — Puente H: control de motores DC y servomotor
@@ -33,7 +33,72 @@ estado: borrador   # borrador | completa
 
 *Simulación en Tinkercad de un Arduino UNO controlando dos motores DC a través de un módulo puente H (L293D).*
 
-![Código de control de motores DC y servomotor](../../recursos/imgs/Captura%20de%20pantalla%202026-09-18%20001857.png)
+![Simulación de control servomotor](../../recursos/imgs/ServoMotor.png)
+
+*Esquema de conexión entre el Arduino UNO y el servomotor en Tinkercad, mostrando las líneas de alimentación y señal PWM.*
+
+​```cpp
+
+#include <Servo.h>
+Servo oliver_dame_de_baja;
+
+void adelante(){
+  digitalWrite(6, HIGH);
+  digitalWrite(7, LOW);
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
+}
+void atras (){
+  digitalWrite(7, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(3, HIGH);
+  digitalWrite(2, LOW);
+}
+void der (){
+  digitalWrite(6, HIGH);
+  digitalWrite(7, LOW);
+  digitalWrite(3, HIGH);
+  digitalWrite(2, LOW);
+}
+void izq (){
+  digitalWrite(7, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
+}
+void setup()
+{
+  //SERVO
+  oliver_dame_de_baja.attach(9);
+
+  //MOTOR
+  pinMode(6, OUTPUT); //OUT1
+  pinMode(7,OUTPUT); //OUT2
+  pinMode(3, OUTPUT); //OUT1
+  pinMode(2,OUTPUT); //OUT2
+
+  digitalWrite(5, HIGH);
+  digitalWrite(1, HIGH);
+}
+
+void loop(){
+  oliver_dame_de_baja.write(0);
+  delay(1000);
+  oliver_dame_de_baja.write(90);
+  delay(1000);
+  oliver_dame_de_baja.write(180);
+  delay(1000);
+  adelante();
+  delay(1000);
+  atras();
+  delay(1000);
+  der();
+  delay(1000);
+  izq();
+  delay(1000);
+}
+
+​```
 
 *Código en Arduino que controla dos motores DC mediante el puente H (adelante, atrás, derecha, izquierda) junto con el movimiento de un servomotor.*
 
