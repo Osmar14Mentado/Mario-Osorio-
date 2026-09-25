@@ -9,11 +9,8 @@ estado: borrador   # completa | completa
 # Sesión 5 — Título c
 
 ## Qué debía lograr hoy
-*Copia los objetivos de la sesión y márcalos al final. Sé honesto: un ❌ explicado vale más que un ✅ falso.*
-
-- [ ] Objetivo 1
-- [ ] Objetivo 2
-
+- Entender cómo los mecanismos transforman el movimiento 
+-  calcular relaciones de transmisión simples
 ## Qué usé
 - Planetary en 3D
 - Bevel en 3D
@@ -58,3 +55,24 @@ los engranes no crean energía, solo la "convierten" — cambian velocidad por f
 | **D · Obturador de láminas (leaf shutter)** | Continuo→intermitente: una sola entrada mueve varias láminas sincronizadas por un anillo | *(depende del número de láminas)* | No autobloqueante, el anillo gira libre en ambos sentidos | Modelo de práctica (obturador negro con aspas azules) | Diafragma de cámara; iris mecánico para regular flujo de aire o luz |
 | **E1 · Engrane cónico espiral** | Cambio de eje: transmite rotación entre dos ejes perpendiculares (90°) mediante dientes en espiral, con contacto gradual y más suave que un cónico recto | *(cuenta dientes del piñón y la corona)* | No autobloqueante | *completar aquí* | Par cónico del diferencial trasero (conecta la flecha cardán con la corona) |
 | **E2 · Junta cardán** | Cambio de eje: igual que la estación C, transmite rotación entre ejes angulados con velocidad de salida no uniforme | 1:1 en promedio, con fluctuación cíclica | Reversible | *completar aquí* | Flecha de transmisión, normalmente en pares (doble cardán) para cancelar la irregularidad |
+
+![Engranajes completos](../../recursos/imgs/Engranajes.jpeg)
+
+![Diferencial](../../recursos/imgs/Diferential.jpeg)
+
+![Shutter](../../recursos/imgs/Shutter.jpeg)
+
+![Universal joint](../../recursos/imgs/Universal%20joint.jpeg)
+
+![Diferencial](../../recursos/imgs/Diferential.jpeg)
+
+![Geneva](../../recursos/imgs/Geneva.jpeg)
+
+![intermittent](../../recursos/imgs/Intermittent.jpeg)
+
+![Worm](../../recursos/imgs/Worm.jpeg)
+
+![Spiral](../../recursos/imgs/Spiral.jpeg)
+
+![Bevel](../../recursos/imgs/Bevel.jpeg)
+
