@@ -10,8 +10,8 @@ estado: completa
 
 ## Qué debía lograr hoy
 
-- Entender cómo los mecanismos transforman el movimiento.
-- Calcular relaciones de transmisión simples.
+- [✅] Entender cómo los mecanismos transforman el movimiento.
+- [✅]Calcular relaciones de transmisión simples.
 
 ## Qué usé
 
