@@ -11,7 +11,8 @@
 - ESP32 DevKit (ESP32-WROOM-32)
 - Módulo puente H TB6612FNG (rojo)
 - 2 motorreductores DC tipo TT
-- Portapilas de 4 pilas AA (6 V)
+- Portapilas de 4 pilas AA (6 V) con interruptor
+- Power bank de 5 V para el ESP32
 - Interruptor basculante (switch)
 - Protoboard mini
 - Cables de puente (jumpers)
@@ -19,14 +20,16 @@
 
 ## Qué hice y qué pasó (evidencia)
 
-El ESP32 manda las señales de control al puente H, y el puente H es el que entrega la corriente a los motores, ya que el ESP32 no puede alimentarlos directamente. La batería pasa primero por el interruptor para poder encender y apagar todo el carrito. El pin STBY del driver lo conecté directo a 3.3 V para que siempre esté habilitado.
+El ESP32 manda las señales de control al puente H, y el puente H es el que entrega la corriente a los motores, ya que el ESP32 no puede alimentarlos directamente. Las pilas pasan primero por el interruptor para poder encender y apagar los motores, y el ESP32 se alimenta aparte con la power bank de 5 V. El pin STBY del driver lo conecté directo a 3.3 V para que siempre esté habilitado.
 
 
 | Desde | Hacia | Descripción |
 | ----- | ----- | ----------- |
-| Batería (+) | Interruptor | Encendido / apagado |
-| Interruptor | VM del puente H y VIN del ESP32 | Alimentación de 6 V |
+| Batería (+) | Interruptor | Encendido / apagado de los motores |
+| Interruptor | VM del puente H | Alimentación de potencia de 6 V |
+| Power bank (5 V) | ESP32 | Alimentación del microcontrolador |
 | Batería (−) | GND común | Tierra compartida por todo el circuito |
+| GND del ESP32 | GND común | Tierra compartida con el puente H y la batería |
 | ESP32 GPIO 17 | AIN1 | Dirección motor izquierdo |
 | ESP32 GPIO 16 | AIN2 | Dirección motor izquierdo |
 | ESP32 GPIO 23 | PWMA | Velocidad motor izquierdo |
@@ -59,4 +62,4 @@ Aprendí por qué se necesita un puente H: el ESP32 solo da señales de baja cor
 
 ## Siguiente paso
 
-Soldar las conexiones en una placa perforada para que no se suelten los cables con la vibración del carrito.
+Terminar el chasis

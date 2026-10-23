@@ -49,8 +49,13 @@ nav:
           - Sesión 2 — conceptos básicos de electrónica: Primer_Parcial/Electronica/Práctica1.md
           - "Sesión 3 — ESP32: control de LEDs": Primer_Parcial/Electronica/Práctica2.md
           - "Sesión 4 — Puente H: control de motores DC y servomotor": Primer_Parcial/Electronica/Práctica3.md
+  - Segundo Parcial:
       - Proyecto 1:
-          - Chasis: "Primer_Parcial/Proyecto 1/Chasis.md"
-          - Control: "Primer_Parcial/Proyecto 1/Control.md"
-          - Electrónica: "Primer_Parcial/Proyecto 1/Electrónica.md"
-          - Programación: "Primer_Parcial/Proyecto 1/Programación.md"
+          - Chasis: "Segundo_Parcial/Proyecto 1/Chasis.md"
+          - Control: "Segundo_Parcial/Proyecto 1/Control.md"
+          - Electrónica: "Segundo_Parcial/Proyecto 1/Electrónica.md"
+          - Programación: "Segundo_Parcial/Proyecto 1/Programación.md"
+      - Mecanismos:
+          - Práctica 4: Segundo_Parcial/Mecanismos/Práctica4.md
+      - Visión por Computadora 101:
+          - Práctica 5: "Segundo_Parcial/Visión por Computadora 101/Práctica5.md"
